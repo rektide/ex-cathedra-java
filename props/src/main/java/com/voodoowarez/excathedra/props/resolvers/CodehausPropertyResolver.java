@@ -1,10 +1,10 @@
-package com.voodoowarez.excathedra.props;
+package com.voodoowarez.excathedra.props.resolver;
 
 import com.voodoowarez.excathedra.props.PropertyResolver;
 import java.util.Properties;
 //import org.codehaus.mojo.properties.PropertyResolver;
 
-class CodehausPropertyResolver implements PropertyResolver {
+public class CodehausPropertyResolver implements PropertyResolver {
 
 	org.codehaus.mojo.properties.PropertyResolver codehausResolver = new org.codehaus.mojo.properties.PropertyResolver();
 

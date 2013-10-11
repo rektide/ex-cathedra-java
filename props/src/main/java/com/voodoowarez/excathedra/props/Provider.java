@@ -1,9 +1,12 @@
-import javax.inject.Provider;
+package com.voodoowarez.excathedra.props;
 
+import com.voodoowarez.excathedra.props.PropertyResolver;
 import com.voodoowarez.excathedra.props.resolver.CodehausPropertyResolver;
 
-class Provider implements Provider<PropertyResolver> {
-	PropertyResolver get(){
+//import javax.inject.Provider;
+
+public class Provider implements javax.inject.Provider<PropertyResolver> {
+	public PropertyResolver get(){
 		return new CodehausPropertyResolver();
 	}
 }
