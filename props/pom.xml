@@ -2,23 +2,32 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<name>ExCathedra Props</name>
+	<url>http://voodoowarez.com/excathedra</url>
 	<groupId>com.voodoowarez.excathedra</groupId>
 	<artifactId>props</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
-	<name>ExCathedra Props</name>
-	<url>http://voodoowarez.com/excathedra</url>
-
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<parent>
+		<groupId>com.voodoowarez.excathedra</groupId>
+		<artifactId>excathedra</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
 	<dependencies>
 		<dependency>
 			<groupId>org.codehaus.mojo</groupId>
 			<artifactId>properties-maven-plugin</artifactId>
 			<version>1.0-alpha-2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
 		</dependency>
 	</dependencies>
 </project>
