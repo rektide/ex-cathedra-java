@@ -1,6 +1,7 @@
-package com.voodoowarez.ex-cathedra.props
+package com.voodoowarez.excathedra.props;
 
 import com.voodoowarez.excathedra.props.PropertyResolver;
+import java.util.Properties;
 //import org.codehaus.mojo.properties.PropertyResolver;
 
 class CodehausPropertyResolver implements PropertyResolver {
@@ -29,6 +30,6 @@ class CodehausPropertyResolver implements PropertyResolver {
 	*/
 	public String getPropertyValue(String key, Properties properties, Properties environment)
 	{
-		return codehausResolver.getPropertyValue(key, properties, environment)
+		return codehausResolver.getPropertyValue(key, properties, environment);
 	}
 }
